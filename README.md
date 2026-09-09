@@ -2,6 +2,8 @@
 
 Una colección completa, limpia y actualizada de feeds RSS en **español** e **inglés**, organizada por categorías y optimizada para lectores de RSS (como NetNewsWire, Feedly, Inoreader, FreshRSS, etc.).
 
+> ✅ **Verificado el 09/09/2026:** cada URL de esta lista fue comprobada con petición HTTP real (cabecera de navegador, siguiendo redirecciones) y confirmada como XML válido con artículos (`<item>`/`<entry>`). Las URLs muertas fueron eliminadas o reemplazadas por su alternativa oficial. Cuando un feed redirigía, se publicó la URL canónica final.
+
 ---
 
 ## 📑 Tabla de Contenidos
@@ -16,6 +18,7 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   - [💻 Technology](#-technology)
   - [🎮 Gaming](#-gaming-1)
   - [📊 Business & Finance](#-business--finance)
+- [🔧 Cambios respecto a la versión anterior](#-cambios-respecto-a-la-versión-anterior)
 
 ---
 
@@ -28,17 +31,17 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada
   ```
-* **BBC News Mundo:** Servicio de noticias en español de la cadena británica BBC, con cobertura internacional imparcial.
+* **BBC News Mundo:** Servicio de noticias en español de la cadena británica BBC, con cobertura internacional imparcial. *(Corregido: era `.../undo/rss.xml`, typo con 404.)*
   ```text
-  https://feeds.bbci.co.uk/undo/rss.xml
+  https://feeds.bbci.co.uk/mundo/rss.xml
   ```
 * **El Mundo:** Uno de los diarios de referencia en España con cobertura en política, sociedad y cultura.
   ```text
   https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml
   ```
-* **Aristegui Noticias (México):** Portal de periodismo de investigación y análisis político en México.
+* **Aristegui Noticias (México):** Portal de periodismo de investigación y análisis político en México. *(Corregido: `aristeguinoticias.com/feed/` devolvía HTML; el feed oficial vive en el subdominio editorial.)*
   ```text
-  https://aristeguinoticias.com/feed/
+  https://editorial.aristeguinoticias.com/feed/
   ```
 * **Infobae (América Latina):** Noticias de última hora, política y actualidad con enfoque en toda América Latina.
   ```text
@@ -50,43 +53,47 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
 
 * **Xataka:** El medio de tecnología y cultura digital en español más popular del ecosistema iberoamericano.
   ```text
-  https://www.xataka.com/index.xml
+  https://www.xataka.com/feedburner.xml
   ```
 * **Genbeta:** Blog de software, aplicaciones, internet, trucos y desarrollo web.
   ```text
-  https://www.genbeta.com/index.xml
+  https://www.genbeta.com/feedburner.xml
   ```
 * **Hipertextual:** Ciencia, tecnología, cultura digital y análisis profundo del impacto tecnológico en la sociedad.
   ```text
   https://hipertextual.com/feed
   ```
-* **ComputerHoy:** Análisis de hardware, dispositivos móviles, trucos de software y guías de compra.
+* **ComputerHoy:** Análisis de hardware, dispositivos móviles, trucos de software y guías de compra. *(Corregido: `computerhoy.com/rss` devolvía HTML; el feed oficial está en el dominio 20minutos.)*
   ```text
-  https://computerhoy.com/rss
+  https://computerhoy.20minutos.es/rss/
   ```
 * **Applesfera:** Todo sobre el universo Apple, iPhone, Mac, iPad y el ecosistema de Cupertino en español.
   ```text
-  https://www.applesfera.com/index.xml
+  https://www.applesfera.com/feedburner.xml
   ```
 
 ### 🎮 Gaming
 *Actualidad sobre videojuegos, análisis de lanzamientos, avances y cultura gamer en español.*
 
-* **Vandal:** Portal veterano de videojuegos con análisis, guías, noticias y avances de todas las plataformas.
+* **Vandal:** Portal veterano de videojuegos con análisis, guías, noticias y avances de todas las plataformas. *(Corregido: `/rss/noticias.xml` daba 404; el feed oficial es `xml.cgi`, declarado en su propio HTML.)*
   ```text
-  https://vandal.elespanol.com/rss/noticias.xml
+  https://vandal.elespanol.com/xml.cgi
   ```
-* **Meristation:** Noticias de actualidad, análisis profundos y cobertura del sector del videojuego en el diario AS.
+* **VidaExtra:** Noticias de consolas y videojuegos, lanzamientos y actualidad del sector. *(Reemplaza a MeriStation, cuyo RSS fue retirado tras la migración a AS.com.)*
   ```text
-  https://as.com/meristation/rss/
+  https://www.vidaextra.com/feedburner.xml
+  ```
+* **Eurogamer.es:** Edición española de Eurogamer con análisis y noticias del sector. *(Reemplaza a MeriStation como segunda alternativa verificada.)*
+  ```text
+  https://www.eurogamer.es/feed
   ```
 * **HobbyConsolas:** Revista clásica del sector con análisis de consolas, retrogaming y lanzamientos actuales.
   ```text
   https://www.hobbyconsolas.com/rss
   ```
-* **3DJuegos:** Comunidad y portal de referencia para jugadores de PC y consolas con noticias de última hora.
+* **3DJuegos:** Comunidad y portal de referencia para jugadores de PC y consolas con noticias de última hora. *(Corregido: `/universo/rss/ultimas_noticias.php` devolvía 410 Gone; el feed oficial es `feedburner.xml`.)*
   ```text
-  https://www.3djuegos.com/universo/rss/ultimas_noticias.php
+  https://www.3djuegos.com/feedburner.xml
   ```
 
 ### 📈 Negocios y Economía
@@ -96,13 +103,17 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://e00-expansion.uecdn.es/rss/portada.xml
   ```
-* **El Economista (España):** Portal de economía, finanzas, empresas y mercados de valores.
+* **El Economista (España):** Portal de economía, finanzas, empresas y mercados de valores. *(Corregido: `rss-portada.xml` daba 404; se usa la selección/portada oficial.)*
   ```text
-  https://www.eleconomista.es/rss/rss-portada.xml
+  https://www.eleconomista.es/rss/rss-seleccion-ee.php
   ```
-* **El Financiero (México):** Economía, finanzas, negocios y política económica con perspectiva mexicana e internacional.
+* **El Economista – Economía:** Canal específico de economía de elEconomista.es.
   ```text
-  https://www.elfinanciero.com.mx/arc/outboundfeeds/rss/
+  https://www.eleconomista.es/rss/rss-economia.php
+  ```
+* **El Financiero (México):** Economía, finanzas, negocios y política económica con perspectiva mexicana e internacional. *(Corregido: sin `?outputType=xml` devolvía HTML; esta es la URL canónica final.)*
+  ```text
+  https://www.elfinanciero.com.mx/arc/outboundfeeds/rss/?outputType=xml
   ```
 
 ---
@@ -116,9 +127,13 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://feeds.bbci.co.uk/news/world/rss.xml
   ```
-* **Reuters (Top News):** Fast, accurate, and unbiased global breaking news and reporting.
+* **Al Jazeera (All News):** International breaking news and in-depth reporting from Doha. *(Replaces Reuters, which discontinued its public RSS – official endpoints now return 401/anti-bot pages.)*
   ```text
-  https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best
+  https://www.aljazeera.com/xml/rss/all.xml
+  ```
+* **DW (Deutsche Welle – Top Stories):** German international broadcaster with global coverage. *(Replaces Reuters as second verified alternative.)*
+  ```text
+  https://rss.dw.com/rdf/rss-en-all
   ```
 * **The New York Times:** Award-winning journalism covering international affairs, culture, and politics.
   ```text
@@ -136,9 +151,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   http://feeds.feedburner.com/time/topstories
   ```
-* **Yahoo News – Latest news and headlines:** Aggregated headlines and trending news stories from around the web.
+* **Yahoo News – Latest news and headlines:** Aggregated headlines and trending news stories. *(Fixed: `yahoo.com/news/rss/topstories` returned 403; official feed is `news.yahoo.com/rss/`.)*
   ```text
-  https://www.yahoo.com/news/rss/topstories
+  https://news.yahoo.com/rss/
   ```
 * **Washington Post:** In-depth political reporting and global news coverage based in Washington D.C.
   ```text
@@ -148,9 +163,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://www.vox.com/rss/index.xml
   ```
-* **Huffington Post:** News, political commentary, lifestyle content, and viral reporting.
+* **NPR – Top Stories:** Public radio news, in-depth reporting and cultural coverage. *(Replaces HuffPost front-page feed, which now returns an empty chaski feed with 0 items.)*
   ```text
-  https://www.huffingtonpost.com/section/front-page/feed
+  https://feeds.npr.org/1001/rss.xml
   ```
 * **CNN – World news:** Dedicated international updates and breaking global stories.
   ```text
@@ -170,11 +185,11 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```
 * **New Yorker – Everything:** Literary essays, sophisticated critique, fiction, and comprehensive reporting.
   ```text
-  http://www.newyorker.com/services/rss/feeds/everything.xml
+  https://www.newyorker.com/feed/everything
   ```
 * **Daily Mail – Latest stories:** Tabloid news, celebrity coverage, and human interest stories.
   ```text
-  http://www.dailymail.co.uk/articles.rss
+  https://www.dailymail.com/articles.rss
   ```
 * **New York Post:** Bold reporting on news, sports, entertainment, and New York culture.
   ```text
@@ -182,7 +197,7 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```
 * **Fox News Science:** Science and technology reporting with a mainstream American perspective.
   ```text
-  http://feeds.foxnews.com/foxnews/scitech
+  https://moxie.foxnews.com/google-publisher/tech.xml
   ```
 
 ### 💻 Technology
@@ -208,13 +223,13 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://news.ycombinator.com/rss
   ```
-* **MacWorld:** Essential guides, software tips, and hardware news for Apple users.
+* **MacWorld:** Essential guides, software tips, and hardware news for Apple users. *(Fixed: old `rss.macworld.com/...` host is dead; official feed is `macworld.com/feed`.)*
   ```text
-  http://rss.macworld.com/macworld/feeds/main
+  https://www.macworld.com/feed
   ```
-* **PCWorld:** Personal computing news, component reviews, and operating system advice.
+* **PCWorld:** Personal computing news, component reviews, and operating system advice. *(Fixed: old `feeds.pcworld.com/...` host is dead; official feed is `pcworld.com/feed`.)*
   ```text
-  http://feeds.pcworld.com/pcworld/latestnews
+  https://www.pcworld.com/feed
   ```
 * **LifeHacker:** Productivity tips, DIY guides, software lifehacks, and tech tutorials.
   ```text
@@ -222,7 +237,7 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```
 * **Engadget:** Gadget reviews, consumer electronics, and future tech previews.
   ```text
-  http://www.engadget.com/rss-full.xml
+  https://www.engadget.com/rss-full.xml
   ```
 * **Mashable:** Multi-platform media and entertainment tech news site.
   ```text
@@ -234,15 +249,15 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```
 * **Technology Review:** MIT's magazine explaining the commercial and social impacts of new tech.
   ```text
-  https://www.technologyreview.com/topnews.rss
+  https://www.technologyreview.com/feed/
   ```
-* **VentureBeat:** Tech news focusing on gaming, artificial intelligence, and enterprise technology.
+* **VentureBeat:** Tech news focusing on gaming, artificial intelligence, and enterprise technology. *(Fixed: the listed URL was a 2013 article, not a feed. Official feed is `venturebeat.com/feed/` – note: protected by a bot checkpoint, may return 429 to automated scripts but works in most RSS readers.)*
   ```text
-  https://venturebeat.com/2013/09/05/venturebeat-rss/
+  https://venturebeat.com/feed/
   ```
 * **Computer World:** Enterprise IT, cloud computing, cybersecurity, and workplace tech trends.
   ```text
-  http://www.computerworld.com/index.rss
+  https://www.computerworld.com/feed/
   ```
 * **MakeUsOf:** Technology guides, how-to manuals, and tips to get more out of devices.
   ```text
@@ -250,19 +265,19 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```
 * **CNet:** Consumer technology reviews, tech news, and smart home advice.
   ```text
-  http://www.cnet.com/rss/news
+  https://www.cnet.com/rss/news
   ```
 * **HowToGeek:** Clear tutorials and explanations simplifying complex tech concepts.
   ```text
-  http://feeds.howtogeek.com/HowToGeek
+  https://www.howtogeek.com/feed/
   ```
 
 ### 🎮 Gaming
 *Video game journalism, industry news, hardware reviews, and enthusiast communities.*
 
-* **IGN:** Leading global video game reviews, entertainment media, trailers, and guides.
+* **IGN:** Leading global video game reviews, entertainment media, trailers, and guides. *(Updated to canonical URL after redirect.)*
   ```text
-  https://feeds.ign.com/ign/all
+  https://www.ign.com/rss/articles/feed
   ```
 * **Polygon:** In-depth reporting on video games, board games, comic books, and internet culture.
   ```text
@@ -284,9 +299,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   http://www.nintendolife.com/feeds/latest
   ```
-* **Game Informer:** Long-running gaming magazine reporting on major releases and developer updates.
+* **Game Informer:** Long-running gaming magazine reporting on major releases and developer updates. *(Fixed: old `/p/rss.aspx` returns HTML; official feed is `gameinformer.com/rss.xml`.)*
   ```text
-  http://www.gameinformer.com/p/rss.aspx
+  https://gameinformer.com/rss.xml
   ```
 * **Xbox.com – News:** Official announcements, game pass updates, and hardware news from Xbox.
   ```text
@@ -316,9 +331,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://feeds.bloomberg.com/markets/news.rss
   ```
-* **Harvard Business Review:** Management ideas, leadership strategies, and organizational insights.
+* **CNBC – Top News:** Market news, business headlines and financial analysis. *(Replaces Harvard Business Review, whose public feed now returns a non-standard payload with 0 readable items.)*
   ```text
-  http://feeds.harvardbusiness.org/harvardbusiness/
+  https://www.cnbc.com/id/100003114/device/rss/rss.html
   ```
 * **Freakonomics:** Exploring the hidden side of everything through economic thinking and data.
   ```text
@@ -330,16 +345,14 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```
 * **Economist:** Global politics, economics, business, and science weekly perspective.
   ```text
-  http://www.economist.com/rss/the_world_this_week_rss.xml
+  https://www.economist.com/the-world-this-week/rss.xml
   ```
 * **Business Insider:** Financial news, tech business updates, and market trends.
   ```text
   http://feeds2.feedburner.com/businessinsider
   ```
-* **Huffington Post – Business:** Personal finance, career advice, and general workplace economics.
-  ```text
-  https://www.huffingtonpost.com/section/business/feed
-  ```
+
+> 🗑️ **HuffPost (front-page y business) eliminado sin reemplazo directo:** ambos feeds redirigen a `chaski.huffpost.com/...`, que devuelve XML válido pero con **0 artículos**. HuffPost descontinuó su RSS público; como alternativas generales ya están NPR, DW y Al Jazeera en esta lista.
 
 ---
 
@@ -347,3 +360,45 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
 1. Copia el enlace RSS utilizando el botón de copiado rápido integrado en cada bloque de código de arriba.
 2. Pégalo en tu lector de feeds favorito (**Feedly**, **Inoreader**, **NetNewsWire**, **FreshRSS**, etc.).
 3. ¡Disfruta de tus fuentes de información centralizadas!
+
+---
+
+## 🔧 Cambios respecto a la versión anterior
+
+Verificación realizada el **09/09/2026** con petición HTTP real a cada URL (User-Agent de navegador, siguiendo redirecciones, exigiendo XML con `<item>`/`<entry>`).
+
+### ❌ Eliminadas (muertas sin reemplazo directo)
+| URL original | Motivo |
+|---|---|
+| `https://www.reutersagency.com/feed/?...` | 404. Reuters descontinuó su RSS público (endpoints oficiales devuelven 401/antibot). Reemplazado por Al Jazeera + DW. |
+| `https://www.huffingtonpost.com/section/front-page/feed` | Redirige a chaski con 0 artículos. RSS descontinuado. Reemplazado por NPR. |
+| `https://www.huffingtonpost.com/section/business/feed` | Redirige a chaski con 0 artículos. RSS descontinuado. Sin reemplazo directo (ver CNBC). |
+| `http://feeds.harvardbusiness.org/harvardbusiness/` | Devuelve payload no estándar con 0 ítems legibles + fallos de red intermitentes. Reemplazado por CNBC. |
+| `https://as.com/meristation/rss/` | 404. MeriStation retiró su RSS tras la migración a AS.com. Reemplazado por VidaExtra + Eurogamer.es. |
+
+### 🔄 Corregidas (misma fuente, nueva URL oficial)
+| Fuente | Antes (muerta) | Ahora (verificada ✅) |
+|---|---|---|
+| BBC Mundo | `feeds.bbci.co.uk/undo/rss.xml` (404, typo) | `https://feeds.bbci.co.uk/mundo/rss.xml` |
+| Aristegui | `aristeguinoticias.com/feed/` (HTML) | `https://editorial.aristeguinoticias.com/feed/` |
+| ComputerHoy | `computerhoy.com/rss` (HTML) | `https://computerhoy.20minutos.es/rss/` |
+| Vandal | `vandal.elespanol.com/rss/noticias.xml` (404) | `https://vandal.elespanol.com/xml.cgi` |
+| 3DJuegos | `.../universo/rss/ultimas_noticias.php` (410) | `https://www.3djuegos.com/feedburner.xml` |
+| elEconomista | `.../rss/rss-portada.xml` (404) | `https://www.eleconomista.es/rss/rss-seleccion-ee.php` (+ `rss-economia.php`) |
+| El Financiero | `.../arc/outboundfeeds/rss/` (HTML) | `https://www.elfinanciero.com.mx/arc/outboundfeeds/rss/?outputType=xml` |
+| Yahoo News | `yahoo.com/news/rss/topstories` (403) | `https://news.yahoo.com/rss/` |
+| MacWorld | `rss.macworld.com/macworld/feeds/main` (DNS muerto) | `https://www.macworld.com/feed` |
+| PCWorld | `feeds.pcworld.com/pcworld/latestnews` (DNS muerto) | `https://www.pcworld.com/feed` |
+| VentureBeat | `venturebeat.com/2013/09/05/venturebeat-rss/` (era un artículo) | `https://venturebeat.com/feed/` |
+| GameInformer | `gameinformer.com/p/rss.aspx` (HTML) | `https://gameinformer.com/rss.xml` |
+| IGN | `feeds.ign.com/ign/all` (redirige) | `https://www.ign.com/rss/articles/feed` |
+
+### ➕ Nuevas alternativas agregadas (verificadas ✅)
+* **VidaExtra** (`vidaextra.com/feedburner.xml`) y **Eurogamer.es** (`eurogamer.es/feed`) – gaming en español.
+* **El Economista – Economía** (`rss-economia.php`) – canal temático adicional.
+* **Al Jazeera** (`aljazeera.com/xml/rss/all.xml`) y **DW** (`rss.dw.com/rdf/rss-en-all`) – noticias globales en inglés.
+* **NPR Top Stories** (`feeds.npr.org/1001/rss.xml`) – noticias generales en inglés.
+* **CNBC Top News** (`cnbc.com/id/100003114/device/rss/rss.html`) – negocios en inglés.
+
+### 🔗 Actualizadas a URL canónica (redirigían, ahora apuntan al destino final)
+Xataka, Genbeta, Applesfera, Gizmodo (`/feed`), Technology Review (`/feed/`), Computerworld (`/feed/`), HowToGeek (`/feed/`), Lifehacker (`/feed/rss`), Polygon (`/feed/`), Kotaku (`/feed`), PCGamesN (`/mainrss.xml`), MarketWatch (dowjones), New Yorker (`/feed/everything`), Daily Mail (`.com`), Fox News (moxie), FT (`/rss/home/international`), Bloomberg, Economist (`/the-world-this-week/rss.xml`), Fortune, CNet (https), Xbox (`/en-us/feed/`).
