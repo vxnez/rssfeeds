@@ -103,13 +103,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://e00-expansion.uecdn.es/rss/portada.xml
   ```
-* **El Economista (España):** Portal de economía, finanzas, empresas y mercados de valores. *(Corregido: `rss-portada.xml` daba 404; se usa la selección/portada oficial.)*
+* **La Vanguardia – Economía:** Economía, empresas, mercados y finanzas del diario La Vanguardia. *(Reemplaza a elEconomista, cuyo sitio bloquea con 403 todos sus feeds RSS.)*
   ```text
-  https://www.eleconomista.es/rss/rss-seleccion-ee.php
-  ```
-* **El Economista – Economía:** Canal específico de economía de elEconomista.es.
-  ```text
-  https://www.eleconomista.es/rss/rss-economia.php
+  https://www.lavanguardia.com/rss/economia.xml
   ```
 * **El Financiero (México):** Economía, finanzas, negocios y política económica con perspectiva mexicana e internacional. *(Corregido: sin `?outputType=xml` devolvía HTML; esta es la URL canónica final.)*
   ```text
@@ -187,9 +183,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://www.newyorker.com/feed/everything
   ```
-* **Daily Mail – Latest stories:** Tabloid news, celebrity coverage, and human interest stories.
+* **The Independent:** British news coverage on world affairs, politics and culture. *(Replaces Daily Mail, whose feed now returns 403 to RSS readers.)*
   ```text
-  https://www.dailymail.com/articles.rss
+  https://www.independent.co.uk/rss
   ```
 * **New York Post:** Bold reporting on news, sports, entertainment, and New York culture.
   ```text
@@ -235,9 +231,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://lifehacker.com/rss
   ```
-* **Engadget:** Gadget reviews, consumer electronics, and future tech previews.
+* **Techmeme:** Real-time aggregator of essential technology news and analysis. *(Replaces Engadget, whose `rss-full.xml` and `rss.xml` now return 404.)*
   ```text
-  https://www.engadget.com/rss-full.xml
+  https://techmeme.com/feed.xml
   ```
 * **Mashable:** Multi-platform media and entertainment tech news site.
   ```text
@@ -251,9 +247,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://www.technologyreview.com/feed/
   ```
-* **VentureBeat:** Tech news focusing on gaming, artificial intelligence, and enterprise technology. *(Fixed: the listed URL was a 2013 article, not a feed. Official feed is `venturebeat.com/feed/` – note: protected by a bot checkpoint, may return 429 to automated scripts but works in most RSS readers.)*
+* **The Register:** Enterprise tech, science and IT news with sharp British wit. *(Replaces VentureBeat, whose feed is blocked by a bot checkpoint returning 429.)*
   ```text
-  https://venturebeat.com/feed/
+  https://www.theregister.com/headlines.atom
   ```
 * **Computer World:** Enterprise IT, cloud computing, cybersecurity, and workplace tech trends.
   ```text
@@ -311,9 +307,9 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   ```text
   https://www.rockpapershotgun.com/feed
   ```
-* **PCGamesN:** PC gaming guides, news, and hardware reviews.
+* **PC Gamer:** PC gaming news, hardware reviews and guides. *(Replaces PCGamesN, whose feed now returns 403.)*
   ```text
-  https://www.pcgamesn.com/rss
+  https://www.pcgamer.com/rss/
   ```
 * **Pushsquare:** PlayStation ecosystem news, trophy guides, and hardware updates.
   ```text
