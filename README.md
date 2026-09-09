@@ -18,7 +18,6 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
   - [💻 Technology](#-technology)
   - [🎮 Gaming](#-gaming-1)
   - [📊 Business & Finance](#-business--finance)
-- [🔧 Cambios respecto a la versión anterior](#-cambios-respecto-a-la-versión-anterior)
 
 ---
 
