@@ -353,5 +353,5 @@ Una colección completa, limpia y actualizada de feeds RSS en **español** e **i
 
 ## 📥 Cómo utilizarlo
 1. Copia el enlace RSS utilizando el botón de copiado rápido integrado en cada bloque de código de arriba.
-2. Pégalo en tu lector de feeds favorito (**Feedly**, **Inoreader**, **NetNewsWire**, **FreshRSS**, etc.).
+2. Pégalo en tu lector de feeds favorito (https://lector-rss-next.vercel.app/).
 3. ¡Disfruta de tus fuentes de información centralizadas!
