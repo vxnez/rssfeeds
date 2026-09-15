@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>RSS en español — vxnez/rssfeeds</title>
+  </head>
+  <body>
+    <outline text="Noticias y Actualidad" title="Noticias y Actualidad">
+      <outline type="rss" text="El País" title="El País" xmlUrl="https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada"/>
+      <outline type="rss" text="BBC News Mundo" title="BBC News Mundo" xmlUrl="https://feeds.bbci.co.uk/mundo/rss.xml"/>
+      <outline type="rss" text="El Mundo" title="El Mundo" xmlUrl="https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml"/>
+      <outline type="rss" text="Aristegui Noticias" title="Aristegui Noticias" xmlUrl="https://editorial.aristeguinoticias.com/feed/"/>
+      <outline type="rss" text="Infobae" title="Infobae" xmlUrl="https://www.infobae.com/arc/outboundfeeds/rss/"/>
+    </outline>
+    <outline text="Tecnología" title="Tecnología">
+      <outline type="rss" text="Xataka" title="Xataka" xmlUrl="https://www.xataka.com/feedburner.xml"/>
+      <outline type="rss" text="Genbeta" title="Genbeta" xmlUrl="https://www.genbeta.com/feedburner.xml"/>
+      <outline type="rss" text="Hipertextual" title="Hipertextual" xmlUrl="https://hipertextual.com/feed"/>
+      <outline type="rss" text="ComputerHoy" title="ComputerHoy" xmlUrl="https://computerhoy.20minutos.es/rss/"/>
+      <outline type="rss" text="Applesfera" title="Applesfera" xmlUrl="https://www.applesfera.com/feedburner.xml"/>
+    </outline>
+    <outline text="Gaming" title="Gaming">
+      <outline type="rss" text="Vandal" title="Vandal" xmlUrl="https://vandal.elespanol.com/xml.cgi"/>
+      <outline type="rss" text="VidaExtra" title="VidaExtra" xmlUrl="https://www.vidaextra.com/feedburner.xml"/>
+      <outline type="rss" text="Eurogamer.es" title="Eurogamer.es" xmlUrl="https://www.eurogamer.es/feed"/>
+      <outline type="rss" text="HobbyConsolas" title="HobbyConsolas" xmlUrl="https://www.hobbyconsolas.com/rss"/>
+      <outline type="rss" text="3DJuegos" title="3DJuegos" xmlUrl="https://www.3djuegos.com/feedburner.xml"/>
+    </outline>
+    <outline text="Negocios y Economía" title="Negocios y Economía">
+      <outline type="rss" text="Expansión" title="Expansión" xmlUrl="https://e00-expansion.uecdn.es/rss/portada.xml"/>
+      <outline type="rss" text="La Vanguardia – Economía" title="La Vanguardia – Economía" xmlUrl="https://www.lavanguardia.com/rss/economia.xml"/>
+      <outline type="rss" text="El Financiero" title="El Financiero" xmlUrl="https://www.elfinanciero.com.mx/arc/outboundfeeds/rss/?outputType=xml"/>
+    </outline>
+  </body>
+</opml>
